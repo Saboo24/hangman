@@ -1,4 +1,4 @@
-![Logo](Photo.png)
+![Logo](photo.png)
 
 # 🎮 HANGMAN — The Ultimate Challenge
 
