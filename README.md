@@ -1,10 +1,6 @@
-# 🎮 HANGMAN — The Ultimate Challenge
+![Logo](Photo.png)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-Frontend-blue?style=for-the-badge&logo=react" />
-  <img src="https://img.shields.io/badge/Vite-Lightning-fast-yellow?style=for-the-badge&logo=vite" />
-  <img src="https://img.shields.io/badge/UI-Minimal-black?style=for-the-badge" />
-</p>
+# 🎮 HANGMAN — The Ultimate Challenge
 
 <p align="center">
   <b>Think fast. Guess faster. Survive the timer. ⏳💀</b>
@@ -34,7 +30,7 @@ built with a **fast-paced timer system** and a **clean gaming interface**.
 ## 🎮 CORE FEATURES
 
 * ⏱️ **10-second countdown system**
-* 🎯 **9 progressive levels**
+* 🎯 **6 progressive levels**
 * 🧠 Smart word logic
 * ⌨️ Interactive keyboard UI
 * 🟢 Victory animations (neon green)
