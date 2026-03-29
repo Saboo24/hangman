@@ -1,0 +1,161 @@
+.hangman {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  margin: 20px auto;
+}
+
+.base {
+  width: 100px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.pole {
+  width: 5px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+}
+
+.beam {
+  width: 100px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.rope {
+  width: 3px;
+  height: 30px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 120px;
+}
+
+.head {
+  width: 30px;
+  height: 30px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 105px;
+}
+
+.body {
+  width: 3px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: 120px;
+}
+
+.arm {
+  width: 40px;
+  height: 3px;
+  background: white;
+  position: absolute;
+  top: 80px;
+}
+
+.arm.left {
+  left: 80px;
+  transform: rotate(-30deg);
+}
+
+.arm.right {
+  left: 120px;
+  transform: rotate(30deg);
+}
+
+.leg {
+  width: 40px;
+  height: 3px;
+  background: white;
+  position: absolute;
+  top: 120px;
+}
+
+.leg.left {
+  left: 80px;
+  transform: rotate(-30deg);
+}
+
+.leg.right {
+  left: 120px;
+  transform: rotate(30deg);
+}
+
+@media (max-width: 700px) {
+  .hangman {
+    width: 140px;
+    height: 180px;
+  }
+  .base {
+    width: 70px;
+  }
+  .pole {
+    height: 140px;
+  }
+  .beam {
+    width: 70px;
+  }
+  .rope {
+    height: 20px;
+    left: 85px;
+  }
+  .head {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    left: 75px;
+  }
+  .body {
+    height: 40px;
+    top: 40px;
+    left: 85px;
+  }
+  .arm {
+    width: 25px;
+    top: 55px;
+  }
+  .arm.left {
+    left: 60px;
+  }
+  .arm.right {
+    left: 85px;
+  }
+  .leg {
+    width: 25px;
+    top: 85px;
+  }
+  .leg.left {
+    left: 60px;
+  }
+  .leg.right {
+    left: 85px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .hangman {
+    width: 170px;
+    height: 220px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hangman {
+    transform: scale(1.2);
+  }
+}

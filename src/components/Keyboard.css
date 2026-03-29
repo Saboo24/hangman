@@ -1,0 +1,40 @@
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.key {
+  padding: 10px;
+  font-size: 16px;
+  background: #222;
+  color: white;
+  border: 1px solid #555;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.key:hover {
+  background: #444;
+}
+
+.key:disabled {
+  background: #111;
+  color: gray;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .keyboard {
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 5px;
+    max-width: 90%;
+  }
+
+  .key {
+    padding: 8px;
+    font-size: 12px;
+  }
+}

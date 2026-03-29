@@ -1,0 +1,188 @@
+.intro {
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.intro.show {
+  opacity: 1;
+}
+
+/* noise FIX */
+.noise {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* center */
+.center-box {
+  text-align: center;
+  z-index: 2;
+  animation: fadeUp 1s ease;
+}
+
+.logo {
+  font-size: 4rem;
+  letter-spacing: 12px;
+  font-weight: 600;
+}
+
+.tagline {
+  margin-top: 15px;
+  opacity: 0.4;
+  font-size: 0.9rem;
+}
+
+/* buttons */
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* main */
+.btn.main {
+  background: white;
+  color: black;
+  border: none;
+}
+
+.btn.main:hover {
+  transform: scale(1.05);
+  background: #eaeaea;
+}
+
+/* ghost */
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+}
+
+.btn.ghost:hover {
+  background: white;
+  color: black;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 25px;
+  font-size: 0.8rem;
+  opacity: 0.3;
+  letter-spacing: 4px;
+}
+
+/* ABOUT */
+.about-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.about-box {
+  background: #0a0a0a;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+  animation: scaleIn 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.1);
+  z-index: 10000;
+  position: relative;
+  cursor: default;
+}
+
+.about-box h2 {
+  margin-bottom: 15px;
+}
+
+.about-box p {
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+.signature {
+  margin-top: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.about-box button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background: white;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .logo {
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+
+  .about-box {
+    width: 90%;
+  }
+}
