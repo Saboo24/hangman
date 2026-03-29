@@ -100,5 +100,5 @@ npm run dev
 
 
 <p align="center">
-  ⚡ Crafted with passion • Built for challenge • ❤️
+  ⚡ Crafted with passion by Hamzaoui Amine
 </p>
